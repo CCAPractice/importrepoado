@@ -1,0 +1,46 @@
+name: $(BuildID)
+    
+trigger:
+  batch: true
+  branches:
+    include:
+    - 'master'
+
+pool:
+  vmImage: "windows-latest"
+
+resources:
+  repositories:
+    - repository: ProvisioningEngine
+      name: Accelerators/ProvisioningEngine
+      type: git
+      ref: master
+    
+    #- repository: ConsumerTemplateRepo
+     # name: Cutsomer/CustomerTemplates
+      #type: git
+      #ref: main
+
+    - repository: ProvisioningEngineTemplates
+      name: Accelerators/ProvisioningEngineTemplates
+      type: git
+      ref: master
+      
+
+variables:
+  - template: /consumer-project/azure-pipelines/vars/variables.yaml@self
+  - template: /consumer-project/azure-pipelines/vars/common.yaml@self
+      
+
+extends:
+  template: /pipelines/templates/common-infra-deploy.yaml@ProvisioningEngine
+  parameters:
+    deploy: ${{ variables.deploy }}
+    servicesToDeploy: ${{ variables.servicesToDeploy }}
+    repositoryName: ${{ variables.templateRepositoryName }}
+    provisioningEnvironment: ${{ variables.provisioningEnvironment }}
+    templates:
+      - templatePath: /templates/${{ variables.templateType }}-templates
+        templateType: ${{ variables.templateType }}
+        resourceGroupName: $(resourceGroupName)
+        subscriptionId: $(subscriptionId)
