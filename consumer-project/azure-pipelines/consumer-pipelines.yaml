@@ -24,7 +24,7 @@ resources:
     - repository: ProvisioningEngineTemplates
       name: Accelerators/ProvisioningEngineTemplates
       type: git
-      ref: master
+      ref: feature/runonlyscript
       
 
 variables:
@@ -39,6 +39,13 @@ extends:
     servicesToDeploy: ${{ variables.servicesToDeploy }}
     repositoryName: ${{ variables.templateRepositoryName }}
     provisioningEnvironment: ${{ variables.provisioningEnvironment }}
+    runScript: true
+    scriptsList: 
+    - displayName: 'TestPowershell1'
+      Type: PowerShell
+      scriptPath: 'scripts/powershell/test.ps1'
+      scriptArguments: ''
+      workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
     templates:
       - templatePath: /templates/${{ variables.templateType }}-templates
         templateType: ${{ variables.templateType }}
