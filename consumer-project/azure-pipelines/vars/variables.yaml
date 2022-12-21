@@ -3,7 +3,7 @@ variables:
   skuTier: ToBeUpdatedLater
   accountType: 
   appInsightsWorkspaceName: generictooldemoaiw
-  azureResourceManagerConnection: genericTool
+  azureResourceManagerConnection: TestDemo
   supportsHttpsTrafficOnly: 
   isShareSoftDeleteEnabled: 
   service: 
