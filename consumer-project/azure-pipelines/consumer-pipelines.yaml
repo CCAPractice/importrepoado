@@ -39,7 +39,7 @@ extends:
     servicesToDeploy: ${{ variables.servicesToDeploy }}
     repositoryName: ${{ variables.templateRepositoryName }}
     provisioningEnvironment: ${{ variables.provisioningEnvironment }}
-    runScript: true
+    runScript: ${{ variables.runScript }}
     scriptsList: 
     - displayName: 'TestPowershell1'
       Type: PowerShell
