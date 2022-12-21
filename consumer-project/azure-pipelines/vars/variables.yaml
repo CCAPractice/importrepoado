@@ -88,4 +88,5 @@ variables:
   objectID_Spn_ContributorId: c8806487-3bfc-4f0f-9d5f-63c020e5da94
   instance: ToBeUpdatedLater
   serviceCode: DevOps
+  runScript: true
   kind: 
