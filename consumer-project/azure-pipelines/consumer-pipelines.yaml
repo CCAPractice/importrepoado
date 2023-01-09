@@ -14,7 +14,7 @@ resources:
     - repository: ProvisioningEngine
       name: Accelerators/ProvisioningEngine
       type: git
-      ref: Feature/TerraformSupport 
+      ref: Feature/terraform
     
     #- repository: ConsumerTemplateRepo
      # name: Cutsomer/CustomerTemplates
@@ -36,11 +36,31 @@ extends:
   template: /pipelines/templates/common-infra-deploy.yaml@ProvisioningEngine
   parameters:
     deploy: ${{ variables.deploy }}
+    runScript: false 
     servicesToDeploy: ${{ variables.servicesToDeploy }}
     repositoryName: ${{ variables.templateRepositoryName }}
     provisioningEnvironment: ${{ variables.provisioningEnvironment }}
+    scriptsList: 
+    templateType: ${{ variables.templateType }}
+    - displayName: 'TestPowershell1'
+      Type: PowerShell
+      scriptPath: 'scripts/powershell/test.ps1'
+      scriptArguments: ''
+      workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
+   # preDeployScriptsList: 
+   # - displayName: 'TestPowershell1'
+   #   Type: PowerShell
+   #   scriptPath: 'scripts/powershell/test.ps1'
+   #   scriptArguments: ''
+   #   workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
     templates:
       - templatePath: /templates/${{ variables.templateType }}-templates
         templateType: ${{ variables.templateType }}
         resourceGroupName: $(resourceGroupName)
         subscriptionId: $(subscriptionId)
+   # postDeployScriptsList: 
+   # - displayName: 'TestPowershell1'
+   #   Type: PowerShell
+   #   scriptPath: 'scripts/powershell/test.ps1'
+   #   scriptArguments: ''
+   #   workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
