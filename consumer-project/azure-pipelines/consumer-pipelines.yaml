@@ -42,6 +42,7 @@ extends:
     provisioningEnvironment: ${{ variables.provisioningEnvironment }}
     scriptsList: 
     templateType: ${{ variables.templateType }}
+    scriptsList: 
     - displayName: 'TestPowershell1'
       Type: PowerShell
       scriptPath: 'scripts/powershell/test.ps1'
