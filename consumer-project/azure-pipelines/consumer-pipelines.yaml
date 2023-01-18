@@ -42,12 +42,12 @@ extends:
     provisioningEnvironment: ${{ variables.provisioningEnvironment }}
     scriptsList: 
     templateType: ${{ variables.templateType }}
-   # preDeployScriptsList: 
-   # - displayName: 'TestPowershell1'
-   #   Type: PowerShell
-   #   scriptPath: 'scripts/powershell/test.ps1'
-   #   scriptArguments: ''
-   #   workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
+    preDeployScriptsList: 
+    - displayName: 'TestPowershell1'
+      Type: PowerShell
+      scriptPath: 'scripts/powershell/test.ps1'
+      scriptArguments: ''
+      workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
     templates:
       - templatePath: /templates/${{ variables.templateType }}-templates
         templateType: ${{ variables.templateType }}
