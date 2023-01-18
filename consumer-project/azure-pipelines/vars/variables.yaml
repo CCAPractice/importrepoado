@@ -49,7 +49,7 @@ variables:
   requestedBackupStorageRedundancy: ToBeUpdatedLater
   loginSecretName: ToBeUpdatedLater
   isContainerRestoreEnabled: 
-  templateType: bicep
+  templateType: terraform
   resourceGroupName: generictoolne-rg
   appInsightsSubscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
   templateRepositoryName: ProvisioningEngineTemplates
