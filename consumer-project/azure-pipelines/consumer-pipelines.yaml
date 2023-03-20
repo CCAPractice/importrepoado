@@ -14,7 +14,7 @@ resources:
     - repository: ProvisioningEngine
       name: Accelerators/ProvisioningEngine
       type: git
-      ref: Feature/terraform
+      ref: features/CustomDashBoardProvisioning
     
     #- repository: ConsumerTemplateRepo
      # name: Cutsomer/CustomerTemplates
