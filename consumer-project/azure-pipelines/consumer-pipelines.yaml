@@ -39,7 +39,7 @@ extends:
     runScript: false 
     servicesToDeploy: ${{ variables.servicesToDeploy }}
     repositoryName: ${{ variables.templateRepositoryName }}
-    provisioningEnvironment: ${{ variables.provisioningEnvironment }}
+    provisioningEnvironment: Dev
     scriptsList: 
     templateType: ${{ variables.templateType }}
    # preDeployScriptsList: 
