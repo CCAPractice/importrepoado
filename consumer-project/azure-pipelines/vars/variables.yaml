@@ -3,7 +3,7 @@ variables:
   skuTier: ToBeUpdatedLater
   accountType: 
   appInsightsWorkspaceName: generictooldemoaiw
-  azureResourceManagerConnection: ScriptSpecificServiceConnection
+  azureResourceManagerConnection: genericTool
   supportsHttpsTrafficOnly: 
   isShareSoftDeleteEnabled: 
   service: 
@@ -32,13 +32,13 @@ variables:
   provisioningEnvironment: Dev
   deploy: "true"
   appNamefuncappimport: 
-  subscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
+  subscriptionId: 135a3f71-bc38-4ae5-aa6d-f2198782853c
   appInsightsResourceGroupName: generictoolne-rg
   roleIdMapping_Administrator: 00482a5a-887f-4fb3-b363-3b7fe8e74483
   dataClassification: 
   storageAccountName: 
   accessTier: 
-  servicesToDeploy: storage-account,app-insight
+  servicesToDeploy: cost-management-dashboard
   roleIdMapping_Reader: 21090545-7ca7-4776-b22c-e363652d74d2
   appserviceplan: generictooldemoappserviceplan
   devOpsLabName: 
@@ -51,7 +51,7 @@ variables:
   isContainerRestoreEnabled: 
   templateType: terraform
   resourceGroupName: generictoolne-rg
-  appInsightsSubscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
+  appInsightsSubscriptionId: 135a3f71-bc38-4ae5-aa6d-f2198782853c
   templateRepositoryName: ProvisioningEngineTemplates
   databaseEdition: ToBeUpdatedLater
   objectID_Spn_ReaderId: c8806487-3bfc-4f0f-9d5f-63c020e5da94
