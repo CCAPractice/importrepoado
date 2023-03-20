@@ -29,7 +29,7 @@ variables:
   appPlanSkuName: EP1
   enableSoftDelete: true
   databaseCollation: ToBeUpdatedLater
-  provisioningEnvironment: Dev
+  provisioningEnvironment: 'Dev'
   deploy: "true"
   appNamefuncappimport: 
   subscriptionId: 135a3f71-bc38-4ae5-aa6d-f2198782853c
