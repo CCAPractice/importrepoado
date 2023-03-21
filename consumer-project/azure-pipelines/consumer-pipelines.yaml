@@ -14,7 +14,7 @@ resources:
     - repository: ProvisioningEngine
       name: Accelerators/ProvisioningEngine
       type: git
-      ref: feature/Avanti-MultiEnvironmentSupport
+      ref: master
     
     #- repository: ConsumerTemplateRepo
      # name: Cutsomer/CustomerTemplates
