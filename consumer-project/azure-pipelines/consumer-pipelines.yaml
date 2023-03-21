@@ -14,7 +14,7 @@ resources:
     - repository: ProvisioningEngine
       name: Accelerators/ProvisioningEngine
       type: git
-      ref: master
+      ref: feature/terraformVariableInput
     
     #- repository: ConsumerTemplateRepo
      # name: Cutsomer/CustomerTemplates
