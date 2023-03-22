@@ -18,7 +18,7 @@ variables:
   dailyRecurrence: 
   networkAclsBypass: 
   location: UK South
-  rgLocation: UK South
+  rgLocation: East US
   isBlobSoftDeleteEnabled: 
   containerSoftDeleteRetentionDays: 
   skucapacity: ToBeUpdatedLater
@@ -50,7 +50,7 @@ variables:
   loginSecretName: ToBeUpdatedLater
   isContainerRestoreEnabled: 
   templateType: terraform
-  resourceGroupName: generictoolne-rg
+  resourceGroupName: PADResourceGroup
   appInsightsSubscriptionId: 135a3f71-bc38-4ae5-aa6d-f2198782853c
   templateRepositoryName: ProvisioningEngineTemplates
   databaseEdition: ToBeUpdatedLater
