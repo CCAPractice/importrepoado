@@ -14,7 +14,7 @@ resources:
     - repository: ProvisioningEngine
       name: Accelerators/ProvisioningEngine
       type: git
-      ref: feature/terraformVariableInput
+      ref: master
     
     #- repository: ConsumerTemplateRepo
      # name: Cutsomer/CustomerTemplates
@@ -24,7 +24,7 @@ resources:
     - repository: ProvisioningEngineTemplates
       name: Accelerators/ProvisioningEngineTemplates
       type: git
-      ref: feature/terraform
+      ref: feature/variableSubstitution
       
 
 variables:
