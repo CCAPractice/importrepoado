@@ -38,7 +38,8 @@ variables:
   dataClassification: 
   storageAccountName: 
   accessTier: 
-  servicesToDeploy: event-topic,app-service-plan,app-insight
+  computeservicesToDeploy: event-topic
+  networkserviceToDeploy: storage
   roleIdMapping_Reader: 21090545-7ca7-4776-b22c-e363652d74d2
   appserviceplan: generictooldemoappserviceplan
   devOpsLabName: 
@@ -50,7 +51,8 @@ variables:
   loginSecretName: ToBeUpdatedLater
   isContainerRestoreEnabled: 
   templateType: bicep
-  resourceGroupName: generictoolne-rg
+  computeresourceGroupName: generictoolne-rg
+  networkresourceGroupName: generictoolnew-rg
   appInsightsSubscriptionId: 135a3f71-bc38-4ae5-aa6d-f2198782853c
   templateRepositoryName: ProvisioningEngineTemplates
   databaseEdition: ToBeUpdatedLater
