@@ -36,7 +36,8 @@ extends:
   template: /pipelines/templates/common-infra-deploy.yaml@ProvisioningEngine
   parameters:
     deploy: ${{ variables.deploy }}
-    servicesToDeploy: ${{ variables.servicesToDeploy }}
+    computeservicesToDeploy: ${{ variables.computeservicesToDeploy }}
+    networkserviceToDeploy: ${{ variables.networkserviceToDeploy }}
     repositoryName: ${{ variables.templateRepositoryName }}
     provisioningEnvironment: ${{ variables.provisioningEnvironment }}
     templates:
