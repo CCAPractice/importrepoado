@@ -22,7 +22,7 @@ variables:
 
   #DevTestLab
   name: ToBeUpdatedLater
-  regionId: ToBeUpdatedLater
+  regionId: UK South
   identityType: ToBeUpdatedLater
   labIsolation: ToBeUpdatedLater
   timeZoneId: ToBeUpdatedLater
