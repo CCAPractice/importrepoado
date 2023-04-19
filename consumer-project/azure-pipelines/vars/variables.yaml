@@ -9,7 +9,7 @@ variables:
   templateType: bicep
   servicesToDeploy: appservice.template
   templateRepositoryName: ProvisioningEngineTemplates
-  provisioningEnvironment: DEV
+  provisioningEnvironment: Dev
 
   #AppService
   appPlanSkuName: EP1
