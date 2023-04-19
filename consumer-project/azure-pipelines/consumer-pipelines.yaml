@@ -24,7 +24,7 @@ resources:
     - repository: ProvisioningEngineTemplates
       name: Accelerators/ProvisioningEngineTemplates
       type: git
-      ref: features/anukrutiWebApp
+      ref: features/Ashutosh-AppServiceDeploymenttrouleshooting
       
 
 variables:
