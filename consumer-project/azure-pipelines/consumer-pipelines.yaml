@@ -14,7 +14,7 @@ resources:
     - repository: ProvisioningEngine
       name: Accelerators/ProvisioningEngine
       type: git
-      ref: master
+      ref: features/anukrutiWebappPE
     
     #- repository: ConsumerTemplateRepo
      # name: Cutsomer/CustomerTemplates
