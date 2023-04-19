@@ -7,7 +7,7 @@ variables:
   serviceCode: DevOps
   deploy: "true"
   templateType: bicep
-  servicesToDeploy: appservice
+  servicesToDeploy: appservice.template
   templateRepositoryName: ProvisioningEngineTemplates
   provisioningEnvironment: DEV
 
