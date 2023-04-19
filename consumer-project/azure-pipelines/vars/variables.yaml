@@ -38,7 +38,7 @@ variables:
   dataClassification: 
   storageAccountName: 
   accessTier: 
-  servicesToDeploy: app-service
+  servicesToDeploy: appservice
   roleIdMapping_Reader: 21090545-7ca7-4776-b22c-e363652d74d2
   appserviceplan: generictooldemoappserviceplan
   devOpsLabName: 
@@ -89,4 +89,3 @@ variables:
   instance: ToBeUpdatedLater
   serviceCode: DevOps
   kind: 
-servicesToDeploy:
