@@ -6,7 +6,7 @@ variables:
   rgLocation: UK South
   serviceCode: DevOps
   deploy: "true"
-  templateType: arm
+  templateType: bicep
   servicesToDeploy: appservice.template
   templateRepositoryName: ProvisioningEngineTemplates
   provisioningEnvironment: Dev
