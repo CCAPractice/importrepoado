@@ -4,9 +4,9 @@ variables:
   templateRepositoryName: ProvisioningEngineTemplates
   provisioningEnvironment: DEV
   templateType: terraform
-  resourceGroupName: PADResourceGroup
-  rgLocation: East US
-  subscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
+  resourceGroupName: acceleratorsTeam-serviceProvsioning
+  rgLocation: UK South
+  subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
   serviceCode: DevOps
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
