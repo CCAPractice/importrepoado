@@ -1,4 +1,12 @@
 variables:
+  deploy: "true"
+  servicesToDeploy: cost-management-dashboard
+  templateRepositoryName: ProvisioningEngineTemplates
+  provisioningEnvironment: DEV
+  templateType: terraform
+  resourceGroupName: PADResourceGroup
+  subscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
+
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
   accountType: 
@@ -29,16 +37,12 @@ variables:
   appPlanSkuName: EP1
   enableSoftDelete: true
   databaseCollation: ToBeUpdatedLater
-  provisioningEnvironment: DEV
-  deploy: "true"
   appNamefuncappimport: 
-  subscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
   appInsightsResourceGroupName: generictoolne-rg
   roleIdMapping_Administrator: 00482a5a-887f-4fb3-b363-3b7fe8e74483
   dataClassification: 
   storageAccountName: 
   accessTier: 
-  servicesToDeploy: cost-management-dashboard
   roleIdMapping_Reader: 21090545-7ca7-4776-b22c-e363652d74d2
   appserviceplan: generictooldemoappserviceplan
   devOpsLabName: 
@@ -49,10 +53,7 @@ variables:
   requestedBackupStorageRedundancy: ToBeUpdatedLater
   loginSecretName: ToBeUpdatedLater
   isContainerRestoreEnabled: 
-  templateType: terraform
-  resourceGroupName: PADResourceGroup
   appInsightsSubscriptionId: 135a3f71-bc38-4ae5-aa6d-f2198782853c
-  templateRepositoryName: ProvisioningEngineTemplates
   databaseEdition: ToBeUpdatedLater
   objectID_Spn_ReaderId: c8806487-3bfc-4f0f-9d5f-63c020e5da94
   skuName: ToBeUpdatedLater
