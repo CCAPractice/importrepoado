@@ -5,8 +5,9 @@ variables:
   provisioningEnvironment: DEV
   templateType: terraform
   resourceGroupName: PADResourceGroup
+  rgLocation: East US
   subscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
-
+  serviceCode: DevOps
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
   accountType: 
@@ -26,7 +27,6 @@ variables:
   dailyRecurrence: 
   networkAclsBypass: 
   location: UK South
-  rgLocation: East US
   isBlobSoftDeleteEnabled: 
   containerSoftDeleteRetentionDays: 
   skucapacity: ToBeUpdatedLater
@@ -88,5 +88,4 @@ variables:
   isVersioningEnabled: 
   objectID_Spn_ContributorId: c8806487-3bfc-4f0f-9d5f-63c020e5da94
   instance: ToBeUpdatedLater
-  serviceCode: DevOps
   kind: 
