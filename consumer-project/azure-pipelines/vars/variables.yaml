@@ -8,7 +8,7 @@ variables:
   rgLocation: East US
   subscriptionId: 6087dada-3096-4a3f-9694-d6c821f52e1d
   serviceCode: DevOps
-  dashboardName: Cost-Management
+  dashboardName: Cost-Monitoring
   subscriptionName: Visual Studio Subscription.
   budgetName: budget
   budgetAmount: 2
