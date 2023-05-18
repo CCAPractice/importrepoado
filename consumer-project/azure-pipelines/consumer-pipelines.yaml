@@ -24,7 +24,7 @@ resources:
     - repository: ProvisioningEngineTemplates
       name: Accelerators/ProvisioningEngineTemplates
       type: git
-      ref: feature/variableSubstitution
+      ref: features/CustomDashBoardProvisioning
       
 
 variables:
