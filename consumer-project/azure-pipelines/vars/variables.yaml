@@ -12,7 +12,7 @@ variables:
   subscriptionName: Visual Studio Subscription.
   budgetName: budget
   budgetAmount: 2
-  azureResourceManagerConnection: genericServiceConnection
+  azureResourceManagerConnection: genericTool-2nd
 
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
