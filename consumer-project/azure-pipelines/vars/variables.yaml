@@ -1,18 +1,36 @@
 variables:
+  #deploy: "true"
+  #servicesToDeploy: cost-management-dashboard
+  #templateRepositoryName: ProvisioningEngineTemplates
+  #provisioningEnvironment: DEV
+  #templateType: terraform
+  #resourceGroupName: acceleratorsTeam-serviceProvsioning
+  #rgLocation: UK South
+  #subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
+  #serviceCode: DevOps
+  #dashboardName: Cost-Monitoring
+  #subscriptionName: Visual Studio Subscription.
+  #budgetName: budget
+  #budgetAmount: 2
+  #azureResourceManagerConnection: genericTool-2nd
+
   deploy: "true"
-  servicesToDeploy: cost-management-dashboard
+  servicesToDeploy: budget
   templateRepositoryName: ProvisioningEngineTemplates
   provisioningEnvironment: DEV
-  templateType: terraform
+  templateType: arm
   resourceGroupName: acceleratorsTeam-serviceProvsioning
   rgLocation: UK South
   subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
   serviceCode: DevOps
-  dashboardName: Cost-Monitoring
-  subscriptionName: Visual Studio Subscription.
-  budgetName: budget
-  budgetAmount: 2
-  azureResourceManagerConnection: genericTool-2nd
+  budgetName: budget-Monthly
+  budgetAmount: 10
+  amountTrackingPeriod: Monthly   #Values can be "Monthly","Quarterly","Annually"
+  startDate: "2023-05-01T00:00:00Z"
+  endDate: "2024-05-01T00:00:00Z"
+  firstThreshold: 90
+  secondThreshold: 110
+  contactEmails: avanti-dhananjay.pande@capgemini.com
 
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
