@@ -36,7 +36,7 @@ extends:
   template: /pipelines/templates/common-infra-deploy.yaml@ProvisioningEngine
   parameters:
     deploy: ${{ variables.deploy }}
-    deploymentScope: ${{variables.deploymentScope}}
+    deploymentScope: ${{ variables.deploymentScope }}
     runScript: false 
     servicesToDeploy: ${{ variables.servicesToDeploy }}
     repositoryName: ${{ variables.templateRepositoryName }}
