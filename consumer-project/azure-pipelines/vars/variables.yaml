@@ -31,6 +31,7 @@ variables:
   firstThreshold: 90
   secondThreshold: 110
   contactEmails: avanti-dhananjay.pande@capgemini.com
+  azureResourceManagerConnection: genericTool-2nd
 
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
