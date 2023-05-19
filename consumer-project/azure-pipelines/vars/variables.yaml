@@ -24,12 +24,12 @@ variables:
   subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
   serviceCode: DevOps
   budgetName: budget-Monthly
-  budgetAmount: 10
+  budgetAmount: "10"
   amountTrackingPeriod: Monthly   #Values can be "Monthly","Quarterly","Annually"
   startDate: "2023-05-01T00:00:00Z"
   endDate: "2024-05-01T00:00:00Z"
-  firstThreshold: 90
-  secondThreshold: 110
+  firstThreshold: "90"
+  secondThreshold: "110"
   contactEmails: avanti-dhananjay.pande@capgemini.com
   azureResourceManagerConnection: genericTool-2nd
 
