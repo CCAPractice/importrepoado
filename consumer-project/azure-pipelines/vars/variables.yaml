@@ -24,7 +24,7 @@ variables:
   subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
   serviceCode: DevOps
   budgetName: budget-Monthly
-  budgetAmount: 100
+  #budgetAmount: 100
   amountTrackingPeriod: Monthly   #Values can be "Monthly","Quarterly","Annually"
   startDate: "2023-05-01T00:00:00Z"
   endDate: "2024-05-01T00:00:00Z"
