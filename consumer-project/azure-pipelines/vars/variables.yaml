@@ -12,11 +12,12 @@ variables:
   subscriptionName: Visual Studio Subscription.
   budgetName: budget
   budgetAmount: 2
+  azureResourceManagerConnection: genericServiceConnection
+
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
   accountType: 
   appInsightsWorkspaceName: generictooldemoaiw
-  azureResourceManagerConnection: genericTool
   supportsHttpsTrafficOnly: 
   isShareSoftDeleteEnabled: 
   service: 
