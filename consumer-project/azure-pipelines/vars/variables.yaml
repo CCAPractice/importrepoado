@@ -1,6 +1,6 @@
 variables:
   deploy: "true"
-  deploymentScope: "subscription"
+  deploymentScope: "Subscription"
   servicesToDeploy: budget
   templateRepositoryName: ProvisioningEngineTemplates
   provisioningEnvironment: DEV
