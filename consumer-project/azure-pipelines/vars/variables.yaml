@@ -1,10 +1,10 @@
 variables:
   deploy: "true"
   deploymentScope: "Subscription"
-  servicesToDeploy: cost-management-dashboard
+  servicesToDeploy: budget
   templateRepositoryName: ProvisioningEngineTemplates
   provisioningEnvironment: DEV
-  templateType: terraform
+  templateType: arm
   resourceGroupName: acceleratorsTeam-serviceProvsioning
   rgLocation: UK South
   subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
