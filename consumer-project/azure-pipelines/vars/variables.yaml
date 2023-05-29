@@ -16,7 +16,7 @@ variables:
   endDate: "2024-05-01T00:00:00Z"
   actualThreshold: 90
   forcastThreshold: 110
-  contactEmails: avanti-dhananjay.pande@capgemini.com
+  contactEmails: ashutosh.d.kumar@capgemini.com
   azureResourceManagerConnection: genericTool-2nd
 
   minimumTlsVersion: 
