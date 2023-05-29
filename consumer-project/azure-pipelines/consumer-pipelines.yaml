@@ -36,11 +36,27 @@ extends:
   template: /pipelines/templates/common-infra-deploy.yaml@ProvisioningEngine
   parameters:
     deploy: ${{ variables.deploy }}
+    deploymentScope: ${{ variables.deploymentScope }}
+    runScript: false 
     servicesToDeploy: ${{ variables.servicesToDeploy }}
     repositoryName: ${{ variables.templateRepositoryName }}
     provisioningEnvironment: ${{ variables.provisioningEnvironment }}
+    scriptsList: 
+    templateType: ${{ variables.templateType }}
+   # preDeployScriptsList: 
+   # - displayName: 'TestPowershell1'
+   #   Type: PowerShell
+   #   scriptPath: 'scripts/powershell/test.ps1'
+   #   scriptArguments: ''
+   #   workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
     templates:
       - templatePath: /templates/${{ variables.templateType }}-templates
         templateType: ${{ variables.templateType }}
         resourceGroupName: $(resourceGroupName)
         subscriptionId: $(subscriptionId)
+   # postDeployScriptsList: 
+   # - displayName: 'TestPowershell1'
+   #   Type: PowerShell
+   #   scriptPath: 'scripts/powershell/test.ps1'
+   #   scriptArguments: ''
+   #   workingDirectory: '$(Pipeline.Workspace)/scripts/powershell/test.ps1'
