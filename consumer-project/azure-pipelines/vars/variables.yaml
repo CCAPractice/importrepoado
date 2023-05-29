@@ -18,7 +18,7 @@ variables:
   forcastThreshold: 110
   contactEmails: ashutosh.d.kumar@capgemini.com
   azureResourceManagerConnection: genericTool-2nd
-  dashboardName: Cost Management
+  dashboardName: "Cost Management"
   subscriptionName: Visual-Studio-Enterprise-Subscription
 
   minimumTlsVersion: 
