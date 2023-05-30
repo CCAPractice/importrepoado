@@ -8,6 +8,7 @@ variables:
   resourceGroupName: acceleratorsTeam-serviceProvsioning
   rgLocation: UK South
   subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
+  subscriptionName: Visual-Studio-Enterprise-Subscription
   serviceCode: DevOps
   budgetName: BudgetOnSubscriptionLevel
   budgetAmount: 100
@@ -19,7 +20,7 @@ variables:
   contactEmails: '"ashutosh.d.kumar@capgemini.com","test@capgemini.com"'
   azureResourceManagerConnection: genericTool-2nd
   dashboardName: Cost-Management
-  subscriptionName: Visual-Studio-Enterprise-Subscription
+  
 
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
