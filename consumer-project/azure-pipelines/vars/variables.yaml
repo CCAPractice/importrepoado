@@ -17,7 +17,7 @@ variables:
   endDate: "2024-05-01T00:00:00Z"
   actualThreshold: 90
   forcastThreshold: 110
-  contactEmails: '"ashutosh.d.kumar@capgemini.com","test@capgemini.com"'
+  contactEmails: ashutosh.d.kumar@capgemini.com
   azureResourceManagerConnection: genericTool-2nd
   dashboardName: Resource-Utilization
   
