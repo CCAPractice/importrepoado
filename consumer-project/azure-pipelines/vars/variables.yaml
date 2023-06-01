@@ -20,6 +20,8 @@ variables:
   contactEmails: ashutosh.d.kumar@capgemini.com
   azureResourceManagerConnection: genericTool-2nd
   dashboardName: Resource-Utilization
+  workspaceResourceGroupName: DefaultResourceGroup-SUK
+  workspaceName: DefaultWorkspace-c98f771e-214d-4c3e-ac95-31fbd563bd0d-SUK
   
 
   minimumTlsVersion: 
