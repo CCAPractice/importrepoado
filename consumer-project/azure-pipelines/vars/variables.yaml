@@ -1,7 +1,7 @@
 variables:
   deploy: "true"
   deploymentScope: "Subscription"
-  servicesToDeploy: cost-management-dashboard
+  servicesToDeploy: resource-utilization-dashboard
   templateRepositoryName: ProvisioningEngineTemplates
   provisioningEnvironment: DEV
   templateType: terraform
@@ -9,6 +9,11 @@ variables:
   rgLocation: UK South
   subscriptionId: c98f771e-214d-4c3e-ac95-31fbd563bd0d
   serviceCode: DevOps
+  azureResourceManagerConnection: genericTool-2nd
+
+  #Dashboard
+  subscriptionName: Visual-Studio-Enterprise-Subscription
+  dashboardName: Resource-Utilization
   budgetName: BudgetOnSubscriptionLevel
   budgetAmount: 100
   amountTrackingPeriod: Monthly   #Values can be "Monthly","Quarterly","Annually"
@@ -17,9 +22,14 @@ variables:
   actualThreshold: 90
   forcastThreshold: 110
   contactEmails: ashutosh.d.kumar@capgemini.com
-  azureResourceManagerConnection: genericTool-2nd
-  dashboardName: Cost-Management
-  subscriptionName: Visual-Studio-Enterprise-Subscription
+  apimName: apifortesting
+  apimanagementResourceGroupName: services
+  appservicesResourceGroupName: services
+  appserviceName: appservicetotest
+  logicAppResourceGroupName: services
+  logicAppName: fordashboardtesting
+  storageAccountResourceGroupName: services
+  storageAccountName: servicesa683
 
   minimumTlsVersion: 
   skuTier: ToBeUpdatedLater
@@ -50,16 +60,15 @@ variables:
   enableSoftDelete: true
   databaseCollation: ToBeUpdatedLater
   appNamefuncappimport: 
-  appInsightsResourceGroupName: generictoolne-rg
+  appInsightsResourceGroupName: services
   roleIdMapping_Administrator: 00482a5a-887f-4fb3-b363-3b7fe8e74483
   dataClassification: 
-  storageAccountName: 
   accessTier: 
   roleIdMapping_Reader: 21090545-7ca7-4776-b22c-e363652d74d2
   appserviceplan: generictooldemoappserviceplan
   devOpsLabName: 
   maxSizeBytes: ToBeUpdatedLater
-  appInsightsName: generictooldemoai
+  appInsightsName: fordashboardtesting
   timeZoneId: 
   allowBlobPublicAccess: 
   requestedBackupStorageRedundancy: ToBeUpdatedLater
@@ -79,7 +88,6 @@ variables:
   storageAccountNameexport: ""
   enabledForDiskEncryption: false
   enableRbacAuthorization: true
-  storageaccountresourceGroupName: generictoolne-rg
   eventTopicName: generictooleventtopic
   subnetNameFe: ToBeUpdatedLater
   storageAccountNameimport: ""
